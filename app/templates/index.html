@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Community Events Board</title>
+    </head>
+    <body>
+      <h1>Community Events Board</h1>
+      <h2>Username: {{username}}<h2/>
+      <div class="event-list">
+        <ol>
+          {% for event in events %}
+            <li>{{ event.event }} - {{ event.date }}</li>
+          {% endfor %}
+        </ol>
+      </div>
+    </body>
+</html>
